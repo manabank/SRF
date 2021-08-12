@@ -14,10 +14,10 @@ void loop() {
   
   // Aguardando o buffer de transmissão vazio.
   while (!(UCSR0A & (1<<UDRE0))){};
-  UDR0 = 0x4F; // Enviando o caractere ‘O'.
+  UDR0 = 0x4F; // Enviando o caractere 'O'.
 
   while (!(UCSR0A & (1<<UDRE0))){};
-  UDR0 = 0x69; // Enviando o caractere ‘i'.
+  UDR0 = 0x69; // Enviando o caractere 'i'.
 
   while (!(UCSR0A & (1<<UDRE0))){};
   UDR0 = 0x21; // Enviando o caractere '!'.
