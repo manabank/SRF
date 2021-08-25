@@ -1,8 +1,3 @@
-/*
- * File:   transmissor.c
- * Author: Pedro
- */
-
 
 #include <xc.h>
 

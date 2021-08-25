@@ -1,8 +1,3 @@
-/*
- * File:   receptor.c
- * Author: Pedro
- */
-
 
 #include <xc.h>
 
