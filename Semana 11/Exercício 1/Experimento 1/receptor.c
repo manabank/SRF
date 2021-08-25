@@ -1,8 +1,6 @@
 /*
  * File:   receptor.c
  * Author: Pedro
- *
- * Created on 25 de Agosto de 2021, 09:49
  */
 
 

@@ -1,8 +1,6 @@
 /*
  * File:   transmissor.c
  * Author: Pedro
- *
- * Created on 25 de Agosto de 2021, 10:20
  */
 
 
@@ -31,14 +29,14 @@ void main (void)
 {
     configura_serial();
     
-    //Habilitar as interrupções
-    INTCONbits.PEIE = 1; // Habilita interrupções periféricas
-    INTCONbits.GIE = 1; // Habilita interrupção geral
+    //Habilitar as interrupï¿½ï¿½es
+    INTCONbits.PEIE = 1; // Habilita interrupï¿½ï¿½es perifï¿½ricas
+    INTCONbits.GIE = 1; // Habilita interrupï¿½ï¿½o geral
     
-    // Configura RC6/TX como saída
+    // Configura RC6/TX como saï¿½da
     TRISC &= 0b10111111;
     
-    // Configura RB0 como entrada (Botão)
+    // Configura RB0 como entrada (Botï¿½o)
     TRISB |= 0b00000001;
     
     while(1){
@@ -48,7 +46,7 @@ void main (void)
             TXREG = 0x48; // Enviar '0' para ligar o LED
         }
         
-        // Espera concluir a transmissão do byte
+        // Espera concluir a transmissï¿½o do byte
         while (!(PIR1 & 0b00010000)){};
     }
 }
